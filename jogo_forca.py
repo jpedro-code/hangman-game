@@ -31,7 +31,8 @@ if __name__ == '__main__':
                 for i in range(len(escolha)):
                     if jogadas==escolha[i]:
                         estado_palavra[i] =jogadas
-                        print(estado_palavra)
+                        for x in estado_palavra:
+                                print(x,end='')
                         acertos+=1
                     if acertos<len(estado_palavra):
                         continue
